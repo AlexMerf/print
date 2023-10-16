@@ -1,0 +1,164 @@
+.container {
+  border-radius: clamp(25px, calc(25px + 25 * ((100vw - 320px) / 1600)), 50px)
+    clamp(25px, calc(25px + 25 * ((100vw - 320px) / 1600)), 50px) 0px 0px;
+  background: #2e363f;
+
+  color: #fff;
+}
+
+.topFooter {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  padding: clamp(20px, calc(20px + 50 * ((100vw - 320px) / 1600)), 70px)
+    clamp(20px, calc(20px + 20 * ((100vw - 320px) / 1600)), 40px);
+}
+
+.logo {
+  width: clamp(90px, calc(90px + 92 * ((100vw - 320px) / 1600)), 182px);
+  height: clamp(90px, calc(62px + 64 * ((100vw - 320px) / 1600)), 126px);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.middleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.linkTel {
+  font-weight: 700;
+  font-size: clamp(18px, calc(18px + 12 * ((100vw - 320px) / 1600)), 30px);
+}
+
+.btnArrow {
+  background-color: #fff;
+
+  &:hover {
+    background-color: var(--primary);
+
+    .icon {
+      color: #fff;
+    }
+  }
+
+  .icon {
+    color: var(--primary);
+    rotate: 180deg;
+  }
+}
+
+.lastBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 35px;
+}
+
+.lowerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 30px clamp(20px, calc(20px + 20 * ((100vw - 320px) / 1600)), 40px);
+
+  border-top: 1px solid #fff;
+
+  a {
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--secondary-hover);
+    }
+  }
+}
+
+.wrapperLogo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.linkTelMobile {
+  display: none;
+}
+
+.wrapperNav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btnArrowMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .linkTel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .linkTelMobile {
+    display: block;
+
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .btnArrowMobile {
+    display: block;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    .icon {
+      color: var(--primary);
+      rotate: 180deg;
+    }
+  }
+
+  .lastBox {
+    display: none;
+  }
+
+  .topFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrapperNav {
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .wrapperLogo {
+    width: 100%;
+  }
+
+  .middleBox {
+    width: 100%;
+    align-items: flex-start;
+  }
+}

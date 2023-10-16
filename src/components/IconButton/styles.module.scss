@@ -1,0 +1,18 @@
+.btn {
+	display: block;
+
+	width: clamp(40px, calc(40px + 10 * ((100vw - 320px) / 1600)), 50px);
+	height: auto;
+
+	aspect-ratio: 1;
+
+	border-radius: 100%;
+
+	padding: 10px;
+
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: var(--hover-btn);
+	}
+}

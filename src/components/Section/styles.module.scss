@@ -1,0 +1,11 @@
+.container {
+  margin-block: clamp(60px, calc(60px + 100 * ((100vw - 320px) / 1600)), 160px);
+
+  &[data-margin-top='true'] {
+    margin-top: 0px;
+  }
+
+  &[data-margin-bottom='true'] {
+    margin-bottom: 0px;
+  }
+}

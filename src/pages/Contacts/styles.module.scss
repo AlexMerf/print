@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, calc(20px + 40 * ((100vw - 320px) / 1600)), 60px);
+
+  margin-top: clamp(20px, calc(20px + 40 * ((100vw - 320px) / 1600)), 60px);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, calc(10px + 30 * ((100vw - 320px) / 1600)), 40px);
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(25px, calc(25px + 25 * ((100vw - 320px) / 1600)), 50px);
+    letter-spacing: -1.25px;
+  }
+
+  dl {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, calc(10px + 130 * ((100vw - 320px) / 1600)), 140px);
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(5px, calc(5px + 10 * ((100vw - 320px) / 1600)), 15px);
+    }
+
+    dt {
+      font-weight: 700;
+      font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+    }
+
+    dd {
+      font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+    }
+  }
+}
+
+.mapsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, calc(10px + 30 * ((100vw - 320px) / 1600)), 40px);
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, calc(30px + 30 * ((100vw - 320px) / 1600)), 60px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+}
+
+.mapBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, calc(10px + 50 * ((100vw - 320px) / 1600)), 60px);
+
+  span {
+    font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+  }
+}
+
+.map {
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+.link {
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--secondary-hover);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    dl {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .mapBox {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,20 @@
+html {
+	--text-color: #2e363f;
+	--text-color-contrast: #fff;
+
+	--bg-global: #f3f5fb;
+	--bg: #fff;
+	--bg-icon: #f5f8ff;
+	--bg-overlay: rgba(0, 0, 0, 0.5);
+
+	--primary: #3340d9;
+	--primary-hover: #0d1ab8;
+	--secondary: #fc5c1d;
+	--secondary-hover: #da470d;
+
+	--hover-btn: #f3f5fb11;
+	--disabled-btn: #dfdfdf;
+
+	&[data-theme='dark'] {
+	}
+}

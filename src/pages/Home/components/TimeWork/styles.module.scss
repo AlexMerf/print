@@ -1,0 +1,26 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'a d'
+    'a d'
+    's d'
+    's f'
+    's f'
+    's f';
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'a'
+      's'
+      'd'
+      'f';
+  }
+}

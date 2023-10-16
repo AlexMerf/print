@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+  padding-top: 70px;
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(25px, calc(25px + 25 * ((100vw - 320px) / 1600)), 50px);
+    letter-spacing: -1.25px;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul {
+    list-style: disc;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding-left: 30px;
+  }
+
+  li {
+    font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+  }
+}
+
+.link {
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--secondary-hover);
+  }
+}

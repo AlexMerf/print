@@ -1,0 +1,91 @@
+.left_decor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  .shot {
+    position: absolute;
+    left: -120px;
+    bottom: -30px;
+
+    width: 400px;
+    height: 510px;
+  }
+
+  .decor {
+    position: absolute;
+    left: -20px;
+    bottom: -110px;
+
+    width: 300px;
+    height: auto;
+
+    aspect-ratio: 1;
+  }
+}
+
+.right_decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  .shot {
+    position: absolute;
+    right: -100px;
+    bottom: -70px;
+
+    width: 377px;
+    height: 459px;
+  }
+
+  .decor {
+    position: absolute;
+    right: -80px;
+    bottom: 300px;
+
+    width: 300px;
+    height: auto;
+
+    aspect-ratio: 1;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .left_decor {
+    bottom: 170px;
+
+    .shot {
+      left: -70px;
+      bottom: 0px;
+
+      width: 195px;
+      height: 244px;
+    }
+
+    .decor {
+      left: 0px;
+      bottom: -20px;
+
+      width: 150px;
+    }
+  }
+
+  .right_decor {
+    bottom: 170px;
+
+    .shot {
+      right: -40px;
+      bottom: 0px;
+
+      width: 154px;
+      height: 187px;
+    }
+
+    .decor {
+      right: -60px;
+      bottom: 100px;
+
+      width: 150px;
+    }
+  }
+}

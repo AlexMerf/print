@@ -1,0 +1,36 @@
+.wrapperNav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(5px, calc(5px + 25 * ((100vw - 320px) / 1600)), 30px);
+
+  &[data-direction='columns'] {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.link {
+  font-weight: 700;
+  font-size: clamp(14px, calc(14px + 4 * ((100vw - 320px) / 1600)), 18px);
+  color: #fff;
+
+  text-align: center;
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--secondary-hover);
+  }
+}
+
+.linkActive {
+  font-weight: 700;
+  font-size: clamp(14px, calc(14px + 4 * ((100vw - 320px) / 1600)), 18px);
+  color: var(--secondary);
+}

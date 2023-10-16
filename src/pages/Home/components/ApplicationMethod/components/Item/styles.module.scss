@@ -1,0 +1,79 @@
+.container {
+  position: relative;
+
+  min-height: clamp(200px, calc(200px + 130 * ((100vw - 320px) / 1600)), 330px);
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    .img {
+      scale: 1.2;
+    }
+  }
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: scale 0.2s;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+
+  font-weight: 700;
+  font-size: clamp(20px, calc(20px + 10 * ((100vw - 320px) / 1600)), 30px);
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.75px;
+}
+
+.bgDark {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 54, 63, 0.5);
+}
+
+.link {
+  position: absolute;
+  inset: 0;
+
+  z-index: 3;
+}
+
+.a {
+  grid-area: a;
+}
+
+.s {
+  grid-area: s;
+}
+
+.d {
+  grid-area: d;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}

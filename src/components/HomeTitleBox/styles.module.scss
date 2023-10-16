@@ -1,0 +1,13 @@
+.wrapperTitle {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: clamp(30px, calc(30px + 30 * ((100vw - 320px) / 1600)), 60px);
+}
+
+.title {
+  text-align: center;
+}
