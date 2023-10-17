@@ -18,7 +18,7 @@ export const Item = ({ title, imgSrc, imgAlt, link, index = 0 }: IProps) => {
       initial={{ opacity: 0, y: -30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: (index + 1) * 0.2 }}
+      transition={{ delay: (index + 1) * 0.1 }}
     >
       <h4 className={styles.title}>{title}</h4>
       <div className={styles.wrapperImage}>

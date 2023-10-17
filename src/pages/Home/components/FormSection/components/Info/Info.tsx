@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import cn from 'classnames';
 
 import styles from './styles.module.scss';
@@ -5,7 +6,12 @@ import styles from './styles.module.scss';
 export const Info = () => {
   return (
     <div className={styles.container}>
-      <div className={cn(styles.item, styles.carItem)}>
+      <motion.div
+        className={cn(styles.item, styles.carItem)}
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+      >
         <div className={styles.wrapperImage}>
           <img src="/image/car.svg" alt="Машина" width={60} height={60} />
         </div>
@@ -14,8 +20,13 @@ export const Info = () => {
           компании СДЕК. Стоимость доставки курьером оговаривается
           индивидуально, доставка компанией СДЕК в соответствии с тарифами.
         </p>
-      </div>
-      <div className={cn(styles.item, styles.percentItem)}>
+      </motion.div>
+      <motion.div
+        className={cn(styles.item, styles.percentItem)}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
         <div className={styles.wrapperImage}>
           <img src="/image/50.svg" alt="Машина" width={60} height={60} />
         </div>
@@ -24,7 +35,7 @@ export const Info = () => {
           компании СДЕК. Стоимость доставки курьером оговаривается
           индивидуально, доставка компанией СДЕК в соответствии с тарифами.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

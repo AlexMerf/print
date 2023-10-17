@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import cn from 'classnames';
 
 import styles from './styles.module.scss';
@@ -18,9 +19,24 @@ export const Item = ({
   index,
 }: IProps) => {
   return (
-    <div
+    <motion.div
       className={cn(styles.container, styles[gridArea])}
       style={{ background: bgColor }}
+      initial={{
+        opacity: 0,
+        x:
+          index === 0
+            ? -30
+            : index === 1
+            ? 30
+            : index === 2
+            ? -30
+            : index === 3
+            ? 30
+            : 0,
+      }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.3 }}
     >
       <div className={styles.decor} data-index={index}>
         <img src="/image/hero/decor.svg" alt="" />
@@ -29,6 +45,6 @@ export const Item = ({
         <span className={styles.title}>{title}</span>
         {description && <p className={styles.description}>{description}</p>}
       </div>
-    </div>
+    </motion.div>
   );
 };

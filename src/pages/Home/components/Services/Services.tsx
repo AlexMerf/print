@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import { Container, HomeTitleBox, Section } from '../../../../components';
 
 import styles from './styles.module.scss';
@@ -8,7 +10,12 @@ export const Services = () => {
       <Section className={styles.container}>
         <HomeTitleBox title="Мы рады предложить Вам также услуги по пошиву изделий и раскрою тканей в собственном швейном производстве!" />
         <div className={styles.content}>
-          <div className={styles.info}>
+          <motion.div
+            className={styles.info}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
             <div className={styles.text}>
               <p>
                 Пошив индивидуальной спортивной формы, сувенирных сумок,
@@ -30,10 +37,15 @@ export const Services = () => {
                 эксклюзивные, авторские швейные изделия!
               </p>
             </div>
-          </div>
-          <div className={styles.wrapperImage}>
+          </motion.div>
+          <motion.div
+            className={styles.wrapperImage}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
             <img src="/image/serviceImg.webp" alt="Image" />
-          </div>
+          </motion.div>
         </div>
       </Section>
     </Container>

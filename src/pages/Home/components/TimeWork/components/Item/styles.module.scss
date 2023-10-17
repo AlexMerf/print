@@ -23,7 +23,7 @@
   position: relative;
 
   font-weight: 700;
-  font-size: 30px;
+  font-size: clamp(20px, calc(20px + 10 * ((100vw - 320px) / 1600)), 30px);
   color: #fff;
   text-align: center;
 }
@@ -31,8 +31,8 @@
 .description {
   position: relative;
 
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
   color: #fff;
   text-align: center;
 
@@ -86,4 +86,20 @@
 
 .f {
   grid-area: f;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: max-content;
+
+    break-inside: auto;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
 }

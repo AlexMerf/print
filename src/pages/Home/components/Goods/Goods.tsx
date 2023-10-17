@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import {
   Button,
   Container,
@@ -76,7 +78,14 @@ export const Goods = () => {
             ))}
           </div>
           <div className={styles.box}>
-            <h2>Закажите печать уникального дизайна прямо сейчас</h2>
+            <motion.h2
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              Закажите печать уникального дизайна прямо сейчас
+            </motion.h2>
             <Button colorsType="primary" onClick={onOpenPopup}>
               заказать печать
             </Button>
