@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, calc(5px + 5 * ((100vw - 320px) / 1600)), 10px);
+
+  border-radius: 20px;
+
+  background: linear-gradient(105deg, #412fd0 -7.37%, #0479f2 68.04%);
+
+  padding: clamp(15px, calc(15px + 15 * ((100vw - 320px) / 1600)), 30px);
+}
+
+.wrapperImg {
+  width: 100%;
+  height: clamp(175px, calc(175px + 75 * ((100vw - 320px) / 1600)), 250px);
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+}
+
+.description {
+  flex: 1;
+
+  font-weight: 600;
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+}
+
+.price {
+  font-weight: 700;
+  font-size: clamp(20px, calc(20px + 5 * ((100vw - 320px) / 1600)), 25px);
+
+  margin-top: clamp(5px, calc(5px + 5 * ((100vw - 320px) / 1600)), 10px);
+}

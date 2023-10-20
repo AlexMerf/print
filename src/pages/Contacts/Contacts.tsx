@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 import { Container, Footer, Header, Section } from '../../components';
 
 import styles from './styles.module.scss';
@@ -6,6 +8,13 @@ import styles from './styles.module.scss';
 export const Contacts = () => {
   return (
     <>
+      <Helmet>
+        <title>Контакты Студии Печати на Изделиях: Где Мы Находимся</title>
+        <meta
+          name="description"
+          content="Наши офисы находятся в удобных местах: г. Химки, ул. Профсоюзная, д. 5 кв. 1, пос. Знамя Октября, д. 31, и г. Одинцово, Привокзальная площадь. Свяжитесь с нами, и мы поможем воплотить ваши дизайнерские идеи в жизнь."
+        />
+      </Helmet>
       <Header onlyHeader />
       <Container>
         <Section className={styles.container} withoutTop>

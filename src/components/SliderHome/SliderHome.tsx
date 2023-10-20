@@ -44,8 +44,8 @@ export const SliderHome = ({ items }: IProps) => {
 
     const hammer = new Hammer(container);
 
-    hammer.on('swipeleft', prevItem);
-    hammer.on('swiperight', nextItem);
+    hammer.on('swipeleft', nextItem);
+    hammer.on('swiperight', prevItem);
 
     return () => {
       hammer.off('swipeleft');
@@ -59,7 +59,7 @@ export const SliderHome = ({ items }: IProps) => {
       <div className={styles.container}>
         <IconButton
           aria-label="Предыдущий элемент"
-          onClick={nextItem}
+          onClick={prevItem}
           className={styles.btnArrow}
         >
           <SlArrowLeft />
@@ -80,7 +80,13 @@ export const SliderHome = ({ items }: IProps) => {
                   key={item.title}
                 >
                   <div className={styles.wrapperImage}>
-                    <img src={item.imgSrc} alt={item.imgAlt} />
+                    <img
+                      src={item.imgSrc}
+                      alt={item.imgAlt}
+                      width={540}
+                      height={382}
+                      loading="lazy"
+                    />
                   </div>
                   <div className={styles.info}>
                     <div className={styles.infoContent}>
@@ -101,7 +107,7 @@ export const SliderHome = ({ items }: IProps) => {
         </div>
         <IconButton
           aria-label="Следующий элемент"
-          onClick={prevItem}
+          onClick={nextItem}
           className={styles.btnArrow}
         >
           <SlArrowRight />

@@ -13,7 +13,7 @@ export const Decor = ({ variant }: IProps) => {
         <div className={styles.left_decor}>
           <motion.img
             src="/image/hero/decor.svg"
-            alt="Декор"
+            alt="Декор клякса"
             loading="lazy"
             className={styles.decor}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -22,7 +22,7 @@ export const Decor = ({ variant }: IProps) => {
           />
           <motion.img
             src="/image/hero/shot.webp"
-            alt="Футболка"
+            alt="Футболка с Логотипом"
             loading="lazy"
             className={styles.shot}
             initial={{ opacity: 0, x: -100, rotate: 0 }}
@@ -34,7 +34,7 @@ export const Decor = ({ variant }: IProps) => {
         <div className={styles.right_decor}>
           <motion.img
             src="/image/hero/decor.svg"
-            alt="Декор"
+            alt="Декор клякса"
             loading="lazy"
             className={styles.decor}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -43,7 +43,7 @@ export const Decor = ({ variant }: IProps) => {
           />
           <motion.img
             src="/image/hero/shot2.webp"
-            alt="Футболка"
+            alt="худи с логотипом"
             loading="lazy"
             className={styles.shot}
             initial={{ opacity: 0, x: 100, rotate: 0 }}

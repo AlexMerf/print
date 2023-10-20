@@ -45,7 +45,7 @@ export const Popup = ({ onClose, open }: IProps) => {
             <div className={styles.wrapperTitle}>
               <h2 className={styles.title}>Оставьте заявку</h2>
               <span className={styles.subTitle}>
-                Заполните форму и мы свяжемся с вами
+                Заполните форму и мы свяжемся с Вами
               </span>
             </div>
           </header>

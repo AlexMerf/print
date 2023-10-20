@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { useForm, FormProvider } from 'react-hook-form';
 import { AnimatePresence } from 'framer-motion';
 
-import { Contacts, Home, Politic } from './pages';
+import { Contacts, Home, MethodPage, Politic, Products } from './pages';
 
 import './styles/globals.scss';
 
@@ -20,6 +20,16 @@ const router = createBrowserRouter([
   {
     path: '/contacts',
     element: <Contacts />,
+    errorElement: <span>error</span>,
+  },
+  {
+    path: '/methods/:id',
+    element: <MethodPage />,
+    errorElement: <span>error</span>,
+  },
+  {
+    path: '/products/:id',
+    element: <Products />,
     errorElement: <span>error</span>,
   },
 ]);

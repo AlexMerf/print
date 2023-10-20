@@ -39,7 +39,13 @@ export const Item = ({
       transition={{ delay: 0.3 }}
     >
       <div className={styles.decor} data-index={index}>
-        <img src="/image/hero/decor.svg" alt="" />
+        <img
+          src="/image/hero/decor.svg"
+          alt="Декор клякса"
+          width={193}
+          height={169}
+          loading="lazy"
+        />
       </div>
       <div className={styles.content}>
         <span className={styles.title}>{title}</span>

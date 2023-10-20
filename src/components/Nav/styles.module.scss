@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  row-gap: clamp(10px, calc(10px + 10 * ((100vw - 320px) / 1600)), 20px);
+  column-gap: clamp(4px, calc(4px + 16 * ((100vw - 320px) / 1600)), 20px);
+
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 10px 20px;
+
+  border-radius: 29px;
+
+  font-size: clamp(12px, calc(12px + 6 * ((100vw - 320px) / 1600)), 18px);
+
+  background: #fff;
+
+  transition:
+    background 0.2s,
+    color 0.2s;
+
+  &[data-active='true'] {
+    background: linear-gradient(105deg, #412fd0 -7.37%, #0479f2 68.04%);
+
+    color: #fff;
+  }
+}

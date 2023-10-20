@@ -1,0 +1,329 @@
+{
+  "textile_products": {
+    "description": "Мы готовы предложить Вашему вниманию качественное нанесение изображения на готовые  текстильные изделия различными методами. Возможно нанесения как на наши изделия ,так и на изделия заказчика . Все изображения будут долговечны, стойки к стиркам и воздействиям окружающей среды. Наши сотрудники с нетерпением ждут информацию от Вас ,чтоб рассчитать заказ и подобрать наиболее оптимальный метод нанесения",
+    "items": [
+      {
+        "imgSrc": "/image/products/textile_products/1.webp",
+        "imgAlt": "Мужская классическая футболка",
+        "title": "Мужская классическая футболка",
+        "description": "Цвета в ассортименте",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/2.webp",
+        "imgAlt": "Поло с коротким рукавом",
+        "title": "Поло с коротким рукавом",
+        "description": "Цвета в ассортименте",
+        "price": 690
+      },
+      {
+        "imgSrc": "/image/products/textile_products/3.webp",
+        "imgAlt": "Футболка реглан",
+        "title": "Футболка реглан",
+        "description": "Цвета в ассортименте",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/4.webp",
+        "imgAlt": "Футболка с длинным рукавом",
+        "title": "Футболка с длинным рукавом",
+        "description": "Цвета в ассортименте",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/5.webp",
+        "imgAlt": "Женская футболка",
+        "title": "Женская футболка",
+        "description": "Цвета в ассортименте",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/6.webp",
+        "imgAlt": "Женская футболка с длинным рукавом",
+        "title": "Женская футболка с длинным рукавом",
+        "description": "Цвета в ассортименте",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/7.webp",
+        "imgAlt": "Детская футболка",
+        "title": "Детская футболка",
+        "description": "Цвета в ассортименте",
+        "price": 390
+      },
+      {
+        "imgSrc": "/image/products/textile_products/8.webp",
+        "imgAlt": "Толстовка с капюшоном",
+        "title": "Толстовка с капюшоном",
+        "description": "Цвета в ассортименте",
+        "price": 1490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/9.webp",
+        "imgAlt": "Толстовка классическая без капюшона",
+        "title": "Толстовка классическая без капюшона",
+        "description": "Цвета в ассортименте",
+        "price": 1490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/10.webp",
+        "imgAlt": "Лонгслив",
+        "title": "Лонгслив",
+        "description": "Цвета в ассортименте",
+        "price": 590
+      },
+      {
+        "imgSrc": "/image/products/textile_products/11.webp",
+        "imgAlt": "Худи",
+        "title": "Худи",
+        "description": "Цвета в ассортименте",
+        "price": 1490
+      },
+      {
+        "imgSrc": "/image/products/textile_products/12.webp",
+        "imgAlt": "Ветровки",
+        "title": "Ветровки",
+        "description": "Цвета в ассортименте",
+        "price": 990
+      }
+    ],
+    "seo": {
+      "title": "Печать на Текстильных Изделиях: Футболки, Толстовки, Худи и Многое Другое",
+      "description": "Наши возможности по печати на текстильных изделиях включают футболки, толстовки, худи, лонгсливы и ветровки. Создайте уникальные и стильные наряды с нашей студией печати на текстиле."
+    }
+  },
+  "accessories": {
+    "description": "",
+    "items": [
+      {
+        "imgSrc": "/image/products/accessories/1.webp",
+        "imgAlt": "Рюкзак с логотипом",
+        "title": "Рюкзак с логотипом",
+        "description": "",
+        "price": 790
+      },
+      {
+        "imgSrc": "/image/products/accessories/2.webp",
+        "imgAlt": "Сумки, шоперы с логотипом",
+        "title": "Сумки, шоперы с логотипом",
+        "description": "",
+        "price": 190
+      },
+      {
+        "imgSrc": "/image/products/accessories/3.webp",
+        "imgAlt": "Чехол для одежды с логотипом",
+        "title": "Чехол для одежды с логотипом",
+        "description": "",
+        "price": 690
+      },
+      {
+        "imgSrc": "/image/products/accessories/4.webp",
+        "imgAlt": "Мешочки для обуви с логотипом",
+        "title": "Мешочки для обуви с логотипом",
+        "description": "",
+        "price": 190
+      },
+      {
+        "imgSrc": "/image/products/accessories/5.webp",
+        "imgAlt": "Мешочки подарочные",
+        "title": "Мешочки подарочные",
+        "description": "",
+        "price": 50
+      },
+      {
+        "imgSrc": "/image/products/accessories/6.webp",
+        "imgAlt": "Плед с логотипом",
+        "title": "Плед с логотипом",
+        "description": "",
+        "price": 270
+      },
+      {
+        "imgSrc": "/image/products/accessories/7.webp",
+        "imgAlt": "ДЗонты с логотипом",
+        "title": "Зонты с логотипом",
+        "description": "",
+        "price": 590
+      },
+      {
+        "imgSrc": "/image/products/accessories/8.webp",
+        "imgAlt": "Бейсболки с логотипом",
+        "title": "Бейсболки с логотипом",
+        "description": "",
+        "price": 250
+      }
+    ],
+    "seo": {
+      "title": "Печать на Текстильных Изделиях: Рюкзаки, Шоперы, Чехлы, Зонты и Пледы",
+      "description": "Наши возможности по печати на текстильных изделиях включают рюкзаки, шоперы, чехлы для одежды, зонты и пледы. Персонализируйте и украсьте эти предметы уникальными дизайнами вместе с нами."
+    }
+  },
+  "souvenirs": {
+    "description": "",
+    "items": [
+      {
+        "imgSrc": "/image/products/souvenirs/1.webp",
+        "imgAlt": "Фотоподушки",
+        "title": "Фотоподушки",
+        "description": "Односторонние/Двусторонние",
+        "price": 390
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/2.webp",
+        "imgAlt": "Кружки, бутылки, термосы с логотипом",
+        "title": "Кружки, бутылки, термосы с логотипом",
+        "description": "",
+        "price": 170
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/3.webp",
+        "imgAlt": "Магниты",
+        "title": "Магниты",
+        "description": "",
+        "price": 40
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/4.webp",
+        "imgAlt": "Полотенца с вышивкой",
+        "title": "Полотенца с вышивкой",
+        "description": "",
+        "price": 290
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/5.webp",
+        "imgAlt": "Значки и брелоки",
+        "title": "Значки и брелоки",
+        "description": "",
+        "price": 40
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/6.webp",
+        "imgAlt": "Медали",
+        "title": "Медали",
+        "description": "",
+        "price": 190
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/7.webp",
+        "imgAlt": "Кубки",
+        "title": "Кубки",
+        "description": "",
+        "price": 490
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/8.webp",
+        "imgAlt": "Пакеты пвд",
+        "title": "Пакеты пвд",
+        "description": "",
+        "price": 20
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/9.webp",
+        "imgAlt": "Тканевые флажки",
+        "title": "Тканевые флажки",
+        "description": "",
+        "price": 50
+      },
+      {
+        "imgSrc": "/image/products/souvenirs/10.webp",
+        "imgAlt": "Тканевые магниты ручной работы",
+        "title": "Тканевые магниты ручной работы",
+        "description": "",
+        "price": 90
+      }
+    ],
+    "seo": {
+      "title": "Печать на Текстильных Изделиях: Подушки, Кружки, Флажки, Магниты и Значки",
+      "description": "Наши технологии печати на текстильных изделиях оживят ваши подушки, кружки, флажки, магниты и значки уникальными дизайнами. Создайте персонализированные сувениры и подарки с нашей студией печати"
+    }
+  },
+  "tags": {
+    "description": "",
+    "items": [
+      {
+        "imgSrc": "/image/products/tags/1.webp",
+        "imgAlt": "Тканевые бирки",
+        "title": "Тканевые бирки",
+        "description": "Минимальный заказ",
+        "price": 5000
+      },
+      {
+        "imgSrc": "/image/products/tags/2.webp",
+        "imgAlt": "Шевроны",
+        "title": "Шевроны",
+        "description": "Минимальный заказ",
+        "price": 5000
+      }
+    ],
+    "seo": {
+      "title": "Текстильные Бирки и Шевроны: Печать на Ткани с Индивидуальными Деталями",
+      "description": "Наши технологии позволяют создавать уникальные тканевые бирки и шевроны с вашими индивидуальными дизайнами. Оживите свой бренд и продукцию с нашей студией печати на текстильных изделиях."
+    }
+  },
+  "workwear": {
+    "description": "",
+    "items": [
+      {
+        "imgSrc": "/image/products/workwear/1.webp",
+        "imgAlt": "Сигнальные жилеты",
+        "title": "Сигнальные жилеты",
+        "description": "Цвета в ассортименте",
+        "price": 290
+      },
+      {
+        "imgSrc": "/image/products/workwear/2.webp",
+        "imgAlt": "Утеплённый жилет на молнии",
+        "title": "Утеплённый жилет на молнии",
+        "description": "Цвета в ассортименте",
+        "price": 790
+      },
+      {
+        "imgSrc": "/image/products/workwear/3.webp",
+        "imgAlt": "Роба",
+        "title": "Роба",
+        "description": "Цвета в ассортименте",
+        "price": 890
+      }
+    ],
+    "seo": {
+      "title": "Печать на Текстильных Изделиях: Сигнальные Жилеты и Робы",
+      "description": "Персонализируйте ваши жилеты и робы с нашей печатью. Уникальные дизайны на высококачественных изделиях, которые подчеркнут вашу индивидуальность и стиль."
+    }
+  },
+  "polygraphy": {
+    "description": "",
+    "items": [
+      {
+        "imgSrc": "/image/products/polygraphy/1.webp",
+        "imgAlt": "Печать банеров на литом виниле",
+        "title": "СПечать банеров на литом виниле",
+        "description": "",
+        "price": null
+      },
+      {
+        "imgSrc": "/image/products/polygraphy/2.webp",
+        "imgAlt": "Визитки",
+        "title": "Визитки",
+        "description": "Односторонние/Двусторонние",
+        "price": null
+      },
+      {
+        "imgSrc": "/image/products/polygraphy/3.webp",
+        "imgAlt": "Листовки",
+        "title": "Листовки",
+        "description": "Односторонние/Двусторонние",
+        "price": null
+      },
+      {
+        "imgSrc": "/image/products/polygraphy/4.webp",
+        "imgAlt": "Календари",
+        "title": "Календари",
+        "description": "Ламинация",
+        "price": null
+      }
+    ],
+    "seo": {
+      "title": "Широкоформатная Печать и Полиграфия: Ваши Баннеры, Визитки, Листовки и Календари",
+      "description": "Наша студия предоставляет широкоформатную печать и полиграфию высшего качества. Закажите персонализированные баннеры, визитки, листовки и календари с нами, и дайте вашей компании профессиональный и выдающийся вид."
+    }
+  }
+}

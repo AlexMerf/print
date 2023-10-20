@@ -22,9 +22,19 @@ export const Item = ({ title, imgSrc, imgAlt, link, index = 0 }: IProps) => {
     >
       <h4 className={styles.title}>{title}</h4>
       <div className={styles.wrapperImage}>
-        <img src={imgSrc} alt={imgAlt} />
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          width={549}
+          height={409}
+          loading="lazy"
+        />
       </div>
-      <Link to={link} className={styles.link} aria-label={title} />
+      <Link
+        to={`/products/${link}`}
+        className={styles.link}
+        aria-label={title}
+      />
     </motion.div>
   );
 };

@@ -21,7 +21,6 @@ export const Navigation = ({ className, direction }: IProps) => {
   return (
     <nav className={cn(styles.container, className)} data-direction={direction}>
       {navList.map((item, index) => {
-        console.log(item.title);
         if (item.title.includes('#')) {
           return (
             <a key={index} href={item.title} className={styles.link}>

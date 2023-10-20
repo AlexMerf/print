@@ -1,0 +1,27 @@
+.container {
+  flex: 1;
+}
+
+.wrapper {
+  margin-top: clamp(30px, calc(30px + 30 * ((100vw - 320px) / 1600)), 60px);
+  margin-bottom: clamp(
+    60px,
+    calc(60px + 100 * ((100vw - 320px) / 1600)),
+    160px
+  );
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(30px, calc(30px + 27 * ((100vw - 320px) / 1600)), 57px);
+}
+
+.section {
+  padding-top: clamp(30px, calc(30px + 30 * ((100vw - 320px) / 1600)), 60px);
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

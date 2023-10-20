@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, calc(20px + 40 * ((100vw - 320px) / 1600)), 60px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: clamp(25px, calc(25px + 25 * ((100vw - 320px) / 1600)), 50px);
+  letter-spacing: -1.25px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itemTitle {
+  font-weight: 700;
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.innerItem {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: clamp(10px, calc(10px + 10 * ((100vw - 320px) / 1600)), 20px);
+}
+
+.innerItemTitle {
+  font-weight: 700;
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+}
+
+.innerItemText {
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 320px) / 1600)), 18px);
+}
+
+.btn {
+  max-width: 247px;
+}

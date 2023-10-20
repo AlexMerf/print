@@ -7,18 +7,18 @@ import styles from './styles.module.scss';
 const cards = [
   {
     icon: '/image/hero/1.svg',
-    icon_alt: '',
+    icon_alt: 'Иконка качества',
     description:
       'Делаем качественно и в срок, поэтому с нами работают крупные заказчики',
   },
   {
     icon: '/image/hero/2.svg',
-    icon_alt: '',
+    icon_alt: 'Иконка изделия',
     description: 'Предоставляем вещи для печати или печатаем на ваших',
   },
   {
     icon: '/image/hero/3.svg',
-    icon_alt: '',
+    icon_alt: 'Иконка изображения',
     description: 'Помогаем создать изображение и подобрать цвета для изделия',
   },
 ];

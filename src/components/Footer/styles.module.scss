@@ -36,6 +36,12 @@
 .linkTel {
   font-weight: 700;
   font-size: clamp(18px, calc(18px + 12 * ((100vw - 320px) / 1600)), 30px);
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--secondary-hover);
+  }
 }
 
 .btnArrow {

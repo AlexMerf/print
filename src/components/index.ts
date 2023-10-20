@@ -14,3 +14,4 @@ export * from './HomeTitleBox';
 export * from './SliderHome';
 export * from './Input';
 export * from './Popup';
+export * from './Nav';

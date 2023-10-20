@@ -23,6 +23,8 @@ export const Logo = ({
         alt="Logo Print студия"
         {...props}
         className={classNameLogo}
+        width={182}
+        height={126}
       />
     </Link>
   );

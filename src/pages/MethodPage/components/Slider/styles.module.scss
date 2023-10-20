@@ -1,0 +1,105 @@
+.container {
+  position: sticky;
+  top: 20px;
+
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topImages {
+  position: relative;
+
+  width: 100%;
+  height: clamp(200px, calc(200px + 265 * ((100vw - 320px) / 1600)), 465px);
+}
+
+.btnArrow {
+  position: absolute;
+  top: calc(50% - 25px);
+
+  z-index: 1;
+
+  background-color: #fff;
+
+  padding: 15px;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.btnPrev {
+  left: 20px;
+}
+
+.btnNext {
+  right: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  position: absolute;
+  inset: 0;
+}
+
+.wrapperImage {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.lowerImages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image {
+  width: 100%;
+  max-width: 129px;
+  height: clamp(60px, calc(60px + 69 * ((100vw - 320px) / 1600)), 129px);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  &[data-active='true'] {
+    outline: 2px solid var(--secondary);
+  }
+
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    position: static;
+  }
+
+  .btnArrow {
+    display: none;
+  }
+}
