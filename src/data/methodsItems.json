@@ -4,27 +4,32 @@
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/digital-printing/1.webp",
-        "imgAlt": "Принтер цифровой печати"
+        "imgAlt": "Принтер цифровой печати",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/digital-printing/2.webp",
-        "imgAlt": "Принт на изделии"
+        "imgAlt": "Принт на изделии",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/digital-printing/3.webp",
-        "imgAlt": "Принт на изделии"
+        "imgAlt": "Принт на изделии",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/digital-printing/4.webp",
-        "imgAlt": "Принт на футболке"
+        "imgAlt": "Принт на футболке",
+        "poster": ""
       },
       {
         "mediaType": "video",
         "imgSrc": "/video/video.mp4",
-        "imgAlt": "Принт на футболке"
+        "imgAlt": "Принт на футболке",
+        "poster": "/image/methods/digital-printing/3.webp"
       }
     ],
     "title": "Цифровая печать",
@@ -83,17 +88,20 @@
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/silkscreen-printing/1.webp",
-        "imgAlt": "Процесс шелкографии"
+        "imgAlt": "Процесс шелкографии",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/silkscreen-printing/2.webp",
-        "imgAlt": "Принт на футболке"
+        "imgAlt": "Принт на футболке",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/silkscreen-printing/3.webp",
-        "imgAlt": "Изделия"
+        "imgAlt": "Изделия",
+        "poster": ""
       }
     ],
     "title": "Шелкография",
@@ -156,27 +164,32 @@
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/embroidery/1.webp",
-        "imgAlt": "Процесс вышивки"
+        "imgAlt": "Процесс вышивки",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/embroidery/2.webp",
-        "imgAlt": "Вышивка на кепках"
+        "imgAlt": "Вышивка на кепках",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/embroidery/3.webp",
-        "imgAlt": "Вышивка на шарфе"
+        "imgAlt": "Вышивка на шарфе",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/embroidery/4.webp",
-        "imgAlt": "Вышивка на толстовке"
+        "imgAlt": "Вышивка на толстовке",
+        "poster": ""
       },
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/embroidery/5.webp",
-        "imgAlt": "Вышивка на изделиях"
+        "imgAlt": "Вышивка на изделиях",
+        "poster": ""
       }
     ],
     "title": "Вышивка",
@@ -239,7 +252,8 @@
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/sublimation/1.webp",
-        "imgAlt": "Процесс сублимации"
+        "imgAlt": "Процесс сублимации",
+        "poster": ""
       }
     ],
     "title": "Сублимация",
@@ -302,7 +316,8 @@
       {
         "mediaType": "image",
         "imgSrc": "/image/methods/thermal-transfer/1.webp",
-        "imgAlt": "Процесс термотрансфера"
+        "imgAlt": "Процесс термотрансфера",
+        "poster": ""
       }
     ],
     "title": "Термотрансфер",

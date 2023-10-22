@@ -10,9 +10,10 @@ interface IProps {
     description: string;
     price: number | null;
   };
+  onOpenPopup: () => void;
 }
 
-export const Item = ({ item }: IProps) => {
+export const Item = ({ item, onOpenPopup }: IProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapperImg}>
@@ -31,7 +32,7 @@ export const Item = ({ item }: IProps) => {
         )}
         {item.price && <span className={styles.price}>от {item.price} р*</span>}
       </div>
-      <Button>заказать</Button>
+      <Button onClick={onOpenPopup}>заказать</Button>
     </div>
   );
 };

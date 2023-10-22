@@ -15,6 +15,7 @@ interface Item {
   imgSrc: string;
   imgAlt: string;
   mediaType: 'image' | 'video' | string;
+  poster: string;
 }
 
 export const Slider = ({ sliderItems }: IProps) => {
@@ -68,7 +69,11 @@ export const Slider = ({ sliderItems }: IProps) => {
 
         <div className={styles.content}>
           {sliderItems.map((item, index) => (
-            <AnimatePresence key={index} mode="wait" initial={false}>
+            <AnimatePresence
+              key={`${item.imgSrc}_${index}`}
+              mode="wait"
+              initial={false}
+            >
               {currentSlide === index && (
                 <motion.div
                   className={styles.item}
@@ -90,13 +95,15 @@ export const Slider = ({ sliderItems }: IProps) => {
                   ) : (
                     <div className={styles.wrapperImage}>
                       <video
-                        src={item.imgSrc}
                         width={680}
                         height={465}
+                        poster={item.poster}
                         autoPlay
                         loop
                         muted
-                      />
+                      >
+                        <source src={item.imgSrc} type="video/mp4" />
+                      </video>
                     </div>
                   )}
                 </motion.div>
@@ -118,18 +125,31 @@ export const Slider = ({ sliderItems }: IProps) => {
         <div className={styles.lowerImages}>
           {sliderItems.map((itemLower, index) => (
             <button
-              key={index}
+              key={`${itemLower.imgSrc}_${index}`}
               className={styles.image}
               data-active={currentSlide === index}
               onClick={() => setCurrentSlide(index)}
             >
-              <img
-                src={itemLower.imgSrc}
-                alt={itemLower.imgAlt}
-                width={163}
-                height={129}
-                loading="lazy"
-              />
+              {itemLower.mediaType === 'image' ? (
+                <img
+                  src={itemLower.imgSrc}
+                  alt={itemLower.imgAlt}
+                  width={163}
+                  height={129}
+                  loading="lazy"
+                />
+              ) : (
+                <video
+                  width={680}
+                  height={465}
+                  poster={itemLower.poster}
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={itemLower.imgSrc} type="video/mp4" />
+                </video>
+              )}
             </button>
           ))}
         </div>

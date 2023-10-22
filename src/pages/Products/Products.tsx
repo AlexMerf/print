@@ -1,5 +1,5 @@
 import { useLocation, useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 import {
@@ -8,6 +8,7 @@ import {
   Footer,
   Header,
   Nav,
+  Popup,
   Section,
 } from '../../components';
 import { Item } from './components';
@@ -46,6 +47,7 @@ const list = [
 export const Products = () => {
   const { id } = useParams();
   const { pathname } = useLocation();
+  const [open, setOpen] = useState(false);
 
   if (id === undefined) {
     return <div>Параметр "id" отсутствует в URL</div>;
@@ -62,6 +64,14 @@ export const Products = () => {
     });
   }, []);
 
+  const onClosePopup = () => {
+    setOpen(false);
+  };
+
+  const onOpenPopup = () => {
+    setOpen(true);
+  };
+
   return (
     <>
       <Helmet>
@@ -75,20 +85,12 @@ export const Products = () => {
           <main className={styles.wrapper}>
             {productsData.description && (
               <div className={styles.descriptionMain}>
-                <p>
-                  {productsData.description}
-                  <img
-                    src="/image/decor.svg"
-                    alt="Декор"
-                    width={20}
-                    height={30}
-                  />
-                </p>
+                <p>{productsData.description}</p>
               </div>
             )}
             <div className={styles.items}>
               {productsData.items.map((item, index) => (
-                <Item key={index} item={item} />
+                <Item key={index} item={item} onOpenPopup={onOpenPopup} />
               ))}
               {pathname.includes('tags') && (
                 <div className={styles.specTags}>
@@ -139,6 +141,7 @@ export const Products = () => {
           </main>
         </Section>
       </Container>
+      <Popup onClose={onClosePopup} open={open} />
       <Footer />
     </>
   );

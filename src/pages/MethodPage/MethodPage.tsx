@@ -70,6 +70,7 @@ export const MethodPage = () => {
           </main>
         </Section>
       </Container>
+
       <Footer />
     </>
   );

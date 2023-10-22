@@ -28,18 +28,20 @@ export const Header = ({ onlyHeader }: IProps) => {
       <Navigation className={styles.nav} />
       <div className={styles.social}>
         <IconLink
-          to={'/'}
+          to={'https://t.me/+79263810011'}
           icon={<FaTelegramPlane className={styles.icon} />}
           aria-label="Телеграмм"
           title="Телеграмм"
           className={styles.linkIcon}
+          target="_blank"
         />
         <IconLink
-          to={'/'}
+          to={'https://wa.me/79263810011'}
           icon={<FaWhatsapp className={styles.icon} />}
           aria-label="WhatsApp"
           title="WhatsApp"
           className={styles.linkIcon}
+          target="_blank"
         />
         <Link to={'tel:79263810011'} className={styles.link}>
           +7 (926) 381-00-11
