@@ -114,12 +114,13 @@ export const SliderHome = ({ items }: IProps) => {
         </IconButton>
       </div>
       <div className={styles.pagination}>
-        {items.map((_, index) => (
+        {items.map((itemDot, index) => (
           <button
             key={index}
             className={styles.dot}
             data-active={currentSlide === index}
             onClick={() => setCurrentSlide(index)}
+            aria-label={`Изображение ${itemDot.imgAlt}`}
           />
         ))}
       </div>
