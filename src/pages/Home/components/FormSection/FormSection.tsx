@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 export const FormSection = () => {
   return (
-    <Container id="payment">
+    <Container id="payment" className={styles.container}>
       <Section>
         <HomeTitleBox title="Наши условия оплаты и доставки" />
         <div className={styles.content}>

@@ -1,0 +1,7 @@
+.container {
+  scroll-margin-top: clamp(
+    25px,
+    calc(25px + 75 * ((100vw - 320px) / 1600)),
+    100px
+  );
+}

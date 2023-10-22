@@ -17,11 +17,19 @@ export const MobileMenu = ({ onClose, open }: IProps) => {
       <div className={styles.container}>
         <header className={styles.header}>
           <Logo width={183} height={126} classNameContainer={styles.logo} />
-          <IconButton onClick={onClose} aria-label="close">
+          <IconButton
+            onClick={onClose}
+            aria-label="Закрыть меню"
+            title="Закрыть меню"
+          >
             <AiOutlineClose className={styles.icon} />
           </IconButton>
         </header>
-        <Navigation className={styles.nav} direction="columns" />
+        <Navigation
+          className={styles.nav}
+          direction="columns"
+          onClose={onClose}
+        />
         <div className={styles.social}>
           <div className={styles.iconsBtn}>
             <IconLink

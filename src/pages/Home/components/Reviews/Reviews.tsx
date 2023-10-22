@@ -48,7 +48,7 @@ const listItems = [
 
 export const Reviews = () => {
   return (
-    <Container id="reviews">
+    <Container id="reviews" className={styles.container}>
       <Section>
         <HomeTitleBox title="Отзывы наших клиентов о сотрудничестве с нами" />
         <div className={styles.content}>

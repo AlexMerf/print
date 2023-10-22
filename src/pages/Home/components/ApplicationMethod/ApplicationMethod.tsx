@@ -43,7 +43,7 @@ const listItem = [
 
 export const ApplicationMethod = () => {
   return (
-    <Container id="printing_methods">
+    <Container id="printing_methods" className={styles.containerMain}>
       <Section className={styles.container}>
         <HomeTitleBox title="Помогаем создать макет для печати и подобрать наиболее подходящий метод нанесения" />
         <div className={styles.items}>

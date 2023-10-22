@@ -6,6 +6,7 @@ import styles from './styles.module.scss';
 interface IProps {
   className?: string;
   direction?: 'row' | 'columns';
+  onClose?: () => void;
 }
 
 const navList = [
@@ -17,13 +18,22 @@ const navList = [
   { title: '/contacts', value: 'Контакты' },
 ];
 
-export const Navigation = ({ className, direction }: IProps) => {
+export const Navigation = ({
+  className,
+  direction,
+  onClose = () => {},
+}: IProps) => {
   return (
     <nav className={cn(styles.container, className)} data-direction={direction}>
       {navList.map((item, index) => {
         if (item.title.includes('#')) {
           return (
-            <a key={index} href={item.title} className={styles.link}>
+            <a
+              key={index}
+              href={item.title}
+              className={styles.link}
+              onClick={onClose}
+            >
               {item.value}
             </a>
           );
@@ -39,6 +49,7 @@ export const Navigation = ({ className, direction }: IProps) => {
                   ? styles.linkActive
                   : styles.link
               }
+              onClick={onClose}
             >
               {item.value}
             </NavLink>

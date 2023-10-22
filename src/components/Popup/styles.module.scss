@@ -29,7 +29,7 @@
 .popup {
   width: 100%;
 
-  padding: 30px;
+  padding: clamp(10px, calc(10px + 20 * ((100vw - 375px) / 1545)), 30px);
 
   background-color: #fff;
 
@@ -37,12 +37,14 @@
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: clamp(15px, calc(15px + 15 * ((100vw - 375px) / 1545)), 30px);
 }
 
 .header {
   display: flex;
   flex-direction: column;
+
+  text-align: center;
 }
 
 .wrapperTitle {
@@ -58,7 +60,7 @@
 .inputs {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: clamp(10px, calc(10px + 7 * ((100vw - 375px) / 1545)), 17px);
 }
 
 .input {

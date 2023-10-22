@@ -44,7 +44,12 @@ export const Header = ({ onlyHeader }: IProps) => {
         <Link to={'tel:79263810011'} className={styles.link}>
           +7 (926) 381-00-11
         </Link>
-        <IconButton onClick={onOpenDrawer} className={styles.mobileBtn}>
+        <IconButton
+          onClick={onOpenDrawer}
+          className={styles.mobileBtn}
+          aria-label="Открыть меню"
+          title="Открыть меню"
+        >
           <AiOutlineMenu className={styles.icon} />
         </IconButton>
         <MobileMenu onClose={onCloseDrawer} open={openMobileMenu} />

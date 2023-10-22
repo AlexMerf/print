@@ -1,11 +1,12 @@
 import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { useForm, Controller } from 'react-hook-form';
 
 import { Button, IconButton, Input } from '..';
 
 import styles from './styles.module.scss';
-import { Link } from 'react-router-dom';
 
 interface IProps {
   open: boolean;
@@ -16,6 +17,20 @@ export const Popup = ({ onClose, open }: IProps) => {
   if (!open) {
     return null;
   }
+
+  const { control, formState, handleSubmit, reset } = useForm({
+    mode: 'onBlur',
+    defaultValues: {
+      name: '',
+      phone: '',
+    },
+  });
+
+  const onSubmit = (data: any) => {
+    console.log(data);
+    reset();
+    onClose();
+  };
 
   return createPortal(
     <motion.section
@@ -36,7 +51,8 @@ export const Popup = ({ onClose, open }: IProps) => {
         <div className={styles.popup}>
           <header className={styles.header}>
             <IconButton
-              aria-label="Закрыть popup"
+              aria-label="Закрыть окно"
+              title="Закрыть окно"
               onClick={onClose}
               className={styles.btnClose}
             >
@@ -50,9 +66,52 @@ export const Popup = ({ onClose, open }: IProps) => {
             </div>
           </header>
           <div className={styles.inputs}>
-            <Input placeholder="Ваше имя" className={styles.input} />
-            <Input placeholder="Ваш телефон" className={styles.input} />
-            <Button>Сделать заказ</Button>
+            <Controller
+              name="name"
+              control={control}
+              rules={{
+                required: 'Поле "Имя" обязательно для заполнения',
+                minLength: {
+                  value: 2,
+                  message: 'Поле "Имя" должно содержать минимум 2 символа',
+                },
+              }}
+              render={({ field: { onChange, onBlur, value } }) => (
+                <Input
+                  placeholder="Ваше имя"
+                  className={styles.input}
+                  value={value}
+                  onChange={onChange}
+                  onBlur={onBlur}
+                />
+              )}
+            />
+            <Controller
+              name="phone"
+              control={control}
+              rules={{
+                required: 'Поле "Телефон" обязательно для заполнения',
+                pattern: {
+                  value: /^[0-9]+$/,
+                  message: 'Поле "Телефон" должно содержать только цифры',
+                },
+              }}
+              render={({ field: { onChange, onBlur, value } }) => (
+                <Input
+                  placeholder="Ваш телефон"
+                  className={styles.input}
+                  value={value}
+                  onChange={onChange}
+                  onBlur={onBlur}
+                />
+              )}
+            />
+            <Button
+              disabled={!formState.isDirty || !formState.isValid}
+              onClick={handleSubmit(onSubmit)}
+            >
+              Сделать заказ
+            </Button>
             <span className={styles.text}>
               Нажимая на кнопку «Отправить», вы соглашаетесь с{' '}
               <Link to="/politic" className={styles.link}>

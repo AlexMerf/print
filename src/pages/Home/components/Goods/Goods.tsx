@@ -63,7 +63,7 @@ export const Goods = () => {
   };
 
   return (
-    <Container id="prices">
+    <Container id="prices" className={styles.containerMain}>
       <Section className={styles.container} withoutTop>
         <HomeTitleBox
           title="Большой выбор изделий для создания ваших уникальных дизайнов"

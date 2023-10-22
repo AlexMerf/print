@@ -35,7 +35,7 @@
 
 .linkTel {
   font-weight: 700;
-  font-size: clamp(18px, calc(18px + 12 * ((100vw - 320px) / 1600)), 30px);
+  font-size: clamp(16px, calc(16px + 14 * ((100vw - 320px) / 1600)), 30px);
 
   transition: color 0.2s;
 
@@ -91,7 +91,7 @@
 .wrapperLogo {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: clamp(20px, calc(20px + 10 * ((100vw - 320px) / 1600)), 30px);
 }
 
 .linkTelMobile {

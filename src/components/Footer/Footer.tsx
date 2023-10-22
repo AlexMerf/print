@@ -28,7 +28,12 @@ export const Footer = () => {
             <Social />
             <div className={styles.wrapperNav}>
               <Navigation className={styles.nav} />
-              <IconButton className={styles.btnArrowMobile}>
+              <IconButton
+                className={styles.btnArrowMobile}
+                aria-label="В начало страницы"
+                title="В начало страницы"
+                onClick={scrollToTop}
+              >
                 <IoIosArrowDown className={styles.icon} />
               </IconButton>
             </div>
