@@ -54,7 +54,7 @@ export const Footer = () => {
         </div>
         <div className={styles.lowerFooter}>
           <Link to="/politic">Политика конфиденциальности</Link>
-          <Link to={'https://t.me/+79143640559'}>Создание сайта</Link>
+          <Link to={'https://t.me/+79143640559'}>Создание сайта </Link>
         </div>
       </footer>
     </Container>
