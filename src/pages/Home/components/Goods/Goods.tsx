@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
 
 const listItems = [
   {
-    title: 'Печать на текстильных изделиях',
+    title: 'Печать и вышивка на текстильных изделиях',
     src: '/image/goods/1.webp',
     alt: 'Футболка и толстовка с логотипом',
     link: 'textile_products',
